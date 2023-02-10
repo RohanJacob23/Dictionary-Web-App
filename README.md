@@ -20,7 +20,7 @@ I have created a dictionary web app that uses an api to fetch the meaning of the
 
 ### Links
 
-- Solution URL: [Dictionary](dictionary-web-8hgtl5uzn-rohanjacob23.vercel.app)
+- Solution URL: [Dictionary](https://dictionary-web-app-eosin.vercel.app/)
 
 ## My process
 
