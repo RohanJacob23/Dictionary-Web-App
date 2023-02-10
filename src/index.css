@@ -1,13 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --teal: #00adb5;
+}
+
+.dark {
+  /* --grey: #eeeeee; */
+  /* --black: #222831; */
+  /* --light-black: #393e46; */
+  --body-bg: #393e46;
+  --header: #222831;
+  --font-color: #eeeeee;
+  --loading: white;
+}
+
+.light {
+  --body-bg: #eeeeee;
+  --header: white;
+  --font-color: #222831;
+  --loading: #222831;
+
+  --theme-first: #eeeeee;
+  --theme-second: #222831;
+  --theme-third: #393e46;
+}
+
+.serif {
+  font-family: serif;
+}
+.sans-serif {
+  font-family: sans-serif;
+}
+.monospace {
+  font-family: monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  height: 100%;
+  background-color: var(--body-bg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* loading screen */
+.lds-dual-ring {
+  width: 100%;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid var(--loading);
+  border-color: var(--loading) transparent var(--loading) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.header {
+  background-color: var(--header);
+  color: var(--font-color);
+}
+
+.content {
+  color: var(--font-color);
+}
+
+.search {
+  color: var(--font-color);
+  background-color: var(--header);
+}
+
+.gibbrish {
+  color: var(--teal);
+}
+
+.play-circle circle {
+  fill: var(--header);
+}
+
+.font-active {
+  background-color: #f3f4f6;
 }
