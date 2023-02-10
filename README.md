@@ -16,7 +16,7 @@ I have created a dictionary web app that uses an api to fetch the meaning of the
 
 ### Screenshot
 
-![Dictionary]()
+![dictionary](https://user-images.githubusercontent.com/97782641/218122281-a864eba4-eeb6-4c22-b618-365e573a07e7.PNG)
 
 ### Links
 
